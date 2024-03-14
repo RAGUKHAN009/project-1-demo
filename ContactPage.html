@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assests/Fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ContactPage.css">
+    <link rel="stylesheet" href="mobilescreen.css">
+    <link rel="stylesheet" href="ConatctPageResponsive.css">
+    <title>Main Street Motors</title>
+</head>
+
+<body>
+
+    <!-- HEADER STARTS HERE -->
+
+    <header>
+        <div class="headerAlign">
+            <div class="LogoCont">
+                <h1>Main Street Motors</h1>
+            </div>
+            <!--  -->
+            <div class="LogoContact">
+                <a href=""><img src="./assests/images.jpeg" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER ENDS HERE -->
+
+    <div class="heroCont">
+        <aside class="HeroAside">
+            <div class="HeroAsideAlign">
+                <div class="AsideCont1">
+                    <label for="SEARCH">Search</label><br>
+                    <div class="SearchDiv">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="SEARCH" id="searchInput" placeholder="Search Listing">
+                    </div>
+                </div>
+                <div class="AsideCont2">
+                    <h1 class="AsideCont2Heading">Categories</h1>
+                    <ul id="myList" class="CartsNavList">
+                        <li class="nav1 blue" data-target="contentAllInventory">All Inventory</li>
+                        <li class="nav2 " data-target="contentMotorcycles">Motor Cycles</li>
+                        <li class="nav3 " data-target="contentSUV">SUV</li>
+                        <li class="nav4 " data-target="contentTrucks">Trucks</li>
+                        <li class="nav5 " data-target="contentSedan">Sedan</li>
+                        <li class="nav6 " data-target="contentOther">Other</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="HeroMain">
+            <div class="HeroMainAlign">
+
+                <div class="ContactMainCont">
+                    <div class="ContactMainContDis1">
+
+                        <!-- CALENDER -->
+
+                        <div class="ContactCartDis11">
+
+
+
+                            <div class="ContactCartDis11Align">
+                                <div class="calendar">
+
+                                    <h1>Select Day</h1>
+
+
+                                    <div class="headerCalender">
+                                        <button class="prev-Button" onclick="prevMonth()"><i
+                                                class="fa-solid fa-chevron-left"></i></button>
+                                        <div class="month-year calenderHead" id="monthYear"></div>
+                                        <button class="next-Butt" onclick="nextMonth()"><i
+                                                class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <table id="calendarTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Sun</th>
+                                                <th>Mon</th>
+                                                <th>Tue</th>
+                                                <th>Wed</th>
+                                                <th>Thu</th>
+                                                <th>Fri</th>
+                                                <th>Sat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="calendarBody">
+                                        </tbody>
+                                    </table>
+
+                                    <div class="timezone-select">
+                                        <label for="timezone" class="timeZone">Timezone:</label>
+                                        <select id="timezone" onchange="changeTimezone(this.value)">
+                                            <option value="UTC"><i class="fa-solid fa-earth-americas"></i> Eastern Time
+                                                - US & Canada (5:18pm)</option>
+                                            <option value="America/New_York">America/New_York</option>
+                                            <option value="America/Los_Angeles">America/Los_Angeles</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="ContactCartDis12">
+                            <div class="ContactCartDis12Align">
+                                <div class="ContactDis12cart1">
+                                    <h1>Schedule an appointment <br> with Main Street Motors!</h1>
+                                    <div class="clockClass">
+                                        <div class="ClockClassAlign">
+                                            <img src="./assests/clockImg.PNG" alt="">
+                                            <h6>15 minutes</h6>
+                                        </div>
+                                    </div>
+                                    <p>Quality used vehicles for sale with low mileage, like sedans, SUVs for family,
+                                        sports cars, pickup trucks, and more! Affordable pricing + we can work with good
+                                        & bad situations. Let us help! Schedule your appointment today.</p>
+                                </div>
+                                <div class="ContactDis12cart2">
+                                    <h1>In our meeting:</h1>
+                                    <div class="CD12C2Contend">
+                                        <img src="./assests/tickImage.PNG" alt="">
+                                        <ul class="CD12C2ContendList">
+                                            <li>
+                                                First, we'll assess your current power dialing solution or your need for
+                                                one.
+                                            </li>
+                                            <li>
+                                                Then we'll walk through the brand NEW Phone Burner App, showing you all
+                                                the best practices we've developed.
+                                            </li>
+                                            <li>
+                                                Finally, we'll touch on how you can integrate Phone Burner across your
+                                                Work OS to get the most out of monday.com!
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="ContactDis12cart3">
+                                    <button class="appointmentButton">
+                                        <a href="./ContactPage.html">SCHEDULE YOUR APPOINTMENT</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ContactMainContDis2">
+                        <div class="ContactMainContDis2Align">
+                            <img src="./assests/images.jpeg" alt="">
+                            <h1>Message us on Facebook!</h1>
+                            <p>Click here to start a message with HS Cars Chula Vista on Facebook.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div id="contentAllInventory" class="contentAllInventory content active">
+                    <h1 class="ContentInventoryHeading">All Inventory</h1>
+
+                    <div class="ContentInventoryCarts">
+
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="InventoryGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-ALLInventory.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentSUV" class="contentSUV content">
+                    <h1 class="contentSUVHeading">SUV</h1>
+
+                    <div class="contentSUVCarts">
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                        <div class="SUVGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-SUV.html"><img src="./assests/cartsImg2.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$12,000</h1>
+                                <h2>2013 Toyota Prius</h2>
+                                <p>Staten Island, NY <br> 49K miles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentMotorcycles" class="contentMotorcycles content">
+                    <h1 class="contentMotorcyclesHeading">Motor Cycles</h1>
+
+                    <div class="contentMotorcyclesCarts">
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="MotorcyclesGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-MotorCycles.html"><img src="./assests/cartsImg1.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentTrucks" class="contentTrucks content">
+                    <h1 class="contentTrucksHeading">Trucks</h1>
+
+                    <div class="contentTrucksCarts">
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="TrucksGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Trucks.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentSedan" class="contentSedan content">
+                    <h1 class="contentSedanHeading">Sedan</h1>
+
+                    <div class="contentSedanCarts">
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="SedanGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Sedan.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentOther" class="contentOther content">
+                    <h1 class="contentOtherHeading">Other</h1>
+
+                    <div class="contentOtherCarts">
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                        <div class="OtherGridItems">
+                            <div class="cartsImg">
+                                <a href="./descriptionpage-Others.html"><img src="./assests/cartsImg1.jpg" alt=""></a>
+                            </div>
+                            <div class="cartsText">
+                                <h1>$7,000,000</h1>
+                                <h2>TOYOTA PRIUS ALPHA 7 SEATER</h2>
+                                <p>ISLOO CARS BUY N SELL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="ContactPage.js">
+
+</script>
+
+</html>

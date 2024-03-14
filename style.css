@@ -1,0 +1,446 @@
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* 
+
+    HEADER STARTS HERE
+
+*/
+
+header {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DCDFE4;
+}
+
+.headerAlign {
+    height: 28px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LogoCont h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.LogoContact {
+    width: 24px;
+    height: 24px;
+}
+
+.LogoContact a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoContact a img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* 
+    HEADER ENDS HERE
+*/
+
+
+
+/* 
+
+    HERO CONT STARTS HERE
+
+*/
+
+
+.heroCont {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* aside cont starts here */
+.HeroAside {
+    width: 360px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 1px 0px 1px #DCDFE4;
+    background-color: #FFFFFF;
+}
+
+.HeroAsideAlign {
+    width: 92%;
+    height: 92%;
+}
+
+.AsideCont1 {
+    width: 100%;
+    height: 17.5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 1px #DCDFE4;
+}
+
+.AsideCont1 label {
+    font-size: 20px;
+    font-weight: 700;
+    height: 30%;
+    display: flex;
+    width: 100%;
+}
+
+.SearchDiv {
+    height: 33%;
+    width: 99%;
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.SearchDiv i {
+    color: #65676B;
+    padding: 0.5% 0 0 3%;
+    font-size: 17px;
+}
+
+.SearchDiv input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #65676B;
+    width: 80%;
+    height: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/*  */
+
+
+.AsideCont2 {
+    width: 100%;
+    height: 100%;
+}
+
+.AsideCont2Heading {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: 11%;
+}
+
+.CartsNavList {
+    list-style: none;
+    height: 90%;
+    width: 100%;
+}
+
+.CartsNavList li {
+    cursor: pointer;
+    color: black;
+    margin-bottom: 9px;
+    transition: 0.5s ease all;
+    height: 10%;
+    color: #535151;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 2px;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6 {
+
+    width: 94%;
+}
+
+
+
+
+
+.CartsNavList li.blue {
+    color: #1B74E4;
+    background-color: #F8F8F8;
+    padding-left: 16px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+
+}
+
+
+
+.HeroMain {
+    width: calc(100% - 360px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+.HeroMainAlign {
+    width: 95.5%;
+    height: 97.5%;
+    margin-top: 2.5%;
+}
+
+.contentAllInventory,
+.contentSUV,
+.contentMotorcycles,
+.contentTrucks,
+.contentSedan,
+.contentOther {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.ContentInventoryHeading,
+.contentSUVHeading,
+.contentMotorcyclesHeading,
+.contentTrucksHeading,
+.contentSedanHeading,
+.contentOtherHeading {
+    font-size: 22px;
+    font-weight: 700;
+    height: 8%;
+}
+
+.ContentInventoryCarts,
+.contentSUVCarts,
+.contentMotorcyclesCarts,
+.contentTrucksCarts,
+.contentSedanCarts,
+.contentOtherCarts {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 350px);
+    grid-auto-rows: 350px;
+    gap: 12px;
+}
+
+.contentAllInventory::-webkit-scrollbar {
+    height: 0vh;
+    width: 0%;
+}
+
+.contentAllInventory::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.contentSUV::-webkit-scrollbar {
+    height: 0vh;
+    width: 0%;
+}
+
+.contentSUV::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.contentMotorcycles::-webkit-scrollbar {
+    height: 0vh;
+    width: 0%;
+}
+
+.contentMotorcycles::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.contentTrucks::-webkit-scrollbar {
+    height: 0vh;
+    width: 0%;
+}
+
+.contentTrucks::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.contentSedan::-webkit-scrollbar {
+    height: 0vh;
+    width: 0%;
+}
+
+.contentSedan::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.contentOther::-webkit-scrollbar {
+    height: 0vh;
+    width: 0%;
+}
+
+.contentOther::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+
+.InventoryGridItems,
+.SUVGridItems,
+.MotorcyclesGridItems,
+.TrucksGridItems,
+.SedanGridItems,
+.OtherGridItems {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.cartsImg {
+    width: 100%;
+    height: 60%;
+    border-radius: 6px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartsImg button {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    border: none;
+}
+
+.cartsImg button img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    outline: none;
+}
+
+.cartsText {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.cartsText h1 {
+    font-size: 18px;
+    color: #050505;
+    font-weight: 700;
+    height: 30%;
+    margin-top: 6px;
+}
+
+.cartsText h2 {
+    font-size: 15px;
+    color: #050505;
+    font-weight: 500;
+    height: 30%;
+}
+
+.cartsText p {
+    font-size: 14px;
+    color: #65676B;
+    font-weight: 400;
+    height: 30%;
+}
+
+.activ {
+    background-color: #EEF5FF;
+}
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+img {
+    z-index: 1;
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+img::after {
+    content: '';
+    z-index: -1;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 20px #EEF5FF;
+    position: absolute;
+    height: 100%;
+    left: 30%;
+    width: 20px;
+    transform: translate3d(-525%, 0, 0);
+    animation: SlightAnimatio 2s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes SlightAnimatio {
+    50% {
+        left: 150%;
+    }
+
+    100% {
+        left: 30%;
+    }
+
+}
+

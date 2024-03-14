@@ -1,0 +1,872 @@
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* 
+
+    HEADER STARTS HERE
+
+*/
+
+header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DCDFE4;
+}
+
+.headerAlign {
+    height: 28px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LogoCont h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.LogoContact {
+    width: 30px;
+    height: 100%;
+}
+
+.LogoContact button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: #050505;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* 
+    HEADER ENDS HERE
+*/
+
+
+
+/* 
+
+    HERO CONT STARTS HERE
+
+*/
+
+
+.heroCont {
+    width: 100%;
+    height: calc(100vh - 57px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.heroAside {
+    width: 75%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*  */
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    left: 2%;
+}
+
+.next {
+    right: 2%;
+}
+
+.prev i,
+.next i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgba(143, 143, 143, 1);
+}
+
+.S1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.S1Blur,
+.S2Blur,
+.S3Blur,
+.S4Blur,
+.S5Blur,
+.S6Blur,
+.S7Blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+    filter: blur(10px);
+    background-size: cover;
+}
+
+
+.S1Contend,
+.S2Contend,
+.S3Contend,
+.S4Contend,
+.S5Contend,
+.S6Contend,
+.S7Contend {
+    width: 60%;
+    height: 76%;
+    border-radius: 20px;
+    background-size: cover;
+    position: absolute;
+    inset: 12% 20%;
+    overflow: hidden;
+}
+
+
+
+.S2 {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.S3 {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.S4 {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.S5 {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.S6 {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.S7 {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+    z-index: 100;
+    position: absolute;
+    bottom: 5%;
+    width: 150px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: #4a4b4c;
+    border-radius: 14px;
+    left: calc(50% - 75px);
+}
+
+.pagination .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #848484;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination .dot.active {
+    background-color: #ffffff;
+}
+
+/*  */
+
+.heroMain {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(255 255 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroMainAlign {
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.heroMainAlign::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+.heroMainAlign::-webkit-scrollbar {
+    height: 0vh;
+    width: 0%;
+}
+
+.MainCont1 {
+    width: 100%;
+    height: 112px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(220, 223, 228, 1);
+}
+
+.MainCont1 h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(5, 5, 5, 1);
+    height: 30px;
+}
+
+.MainCont1 h2 {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(5, 5, 5, 1);
+    height: 22px;
+}
+
+.MainCont1 p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(101, 103, 107, 1);
+    height: 16px;
+}
+
+.MainCont2 {
+    width: 100%;
+    margin: 24px 0px;
+    height: 380px;
+    border-bottom: 1px solid rgba(220, 223, 228, 1);
+}
+
+.MainCont2 h1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(5, 5, 5, 1);
+}
+
+.LISTclass {
+    width: 100%;
+    height: 92%;
+}
+
+.ListItems {
+    width: 100%;
+    height: 13%;
+    font-size: 15px;
+    color: rgba(5, 5, 5, 1);
+    display: flex;
+}
+
+.ListItems img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    margin-top: 8px;
+}
+
+.ListItems p {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+
+.MainCont3 {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(220, 223, 228, 1);
+}
+
+/*  */
+
+.paragraph-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.seeMoreButton {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    background-color: #ffffff;
+    border: none;
+    color: #050505;
+    font-weight: 700;
+    cursor: pointer;
+    width: 95px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.limited-words {
+    height: 50px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.expanded {
+    height: 130px;
+}
+
+.MainCont3 h2 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 24px;
+}
+
+.MainCont3 h6 {
+    color: rgba(101, 103, 107, 1);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.mapImgCont {
+    width: 100%;
+    height: 247px;
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+.mapImgCont iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*  */
+
+.MainCont4 {
+    height: 100px;
+    width: 100%;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(220, 223, 228, 1);
+}
+
+.MainCont4Button1Cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+}
+
+.MainCont4Button1Cont button {
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(8, 102, 255, 1);
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.MainCont4Button1Cont button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainCont4Button2Cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+    gap: 10px;
+}
+
+.MainCont4Button2Cont button {
+    width: 50%;
+    height: 90%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(228, 230, 235, 1);
+    color: rgba(5, 5, 5, 1);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.MainCont5 {
+    width: 100%;
+    height: 1330px;
+}
+
+.MainCont5Heading {
+    margin-top: 24px;
+    position: sticky;
+    background-color: #ffffff;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    z-index: 1000;
+}
+
+
+.MainCont5GridSection {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 310px);
+    grid-auto-rows: 310px;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.GridCarts {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.GridImage {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.GridText {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.GridText h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.GridText h2 {
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.GridText h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(101, 103, 107, 1);
+}
+
+.GridText h4 {
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    color: rgba(101, 103, 107, 1);
+}
+
+
+
+
+/*  */
+/*  */
+/*  */
+
+
+nav {
+    display: none;
+    width: 100%;
+    height: 56px;
+}
+
+.HeroAside {
+    width: 449px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 1px 0px 1px #DCDFE4;
+    background-color: #FFFFFF;
+}
+
+.HeroAsideAlign {
+    width: 92%;
+    height: 92%;
+}
+
+.AsideCont1 {
+    width: 100%;
+    height: 17.5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 1px #DCDFE4;
+}
+
+.AsideCont1 label {
+    font-size: 20px;
+    font-weight: 700;
+    height: 30%;
+    display: flex;
+    width: 100%;
+}
+
+.SearchDiv {
+    height: 33%;
+    width: 99%;
+    background-color: #F8F8F8;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.SearchDiv i {
+    color: #65676B;
+    padding: 0.5% 0 0 3%;
+    font-size: 17px;
+}
+
+.SearchDiv input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #65676B;
+    width: 80%;
+    height: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/*  */
+
+
+.AsideCont2 {
+    width: 100%;
+    height: 100%;
+}
+
+.AsideCont2Heading {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: 11%;
+}
+
+.CartsNavList {
+    list-style: none;
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.CartsNavList::-webkit-scrollbar {
+    height: 0vh;
+    width: 0;
+}
+
+.CartsNavList::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.CartsNavList li {
+    cursor: pointer;
+    color: black;
+    margin-bottom: 9px;
+    transition: 0.5s ease all;
+    height: 10%;
+    color: #535151;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 2px;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6 {
+
+    width: 94%;
+}
+
+
+
+
+
+.CartsNavList li.blue {
+    color: #1B74E4;
+    background-color: #F8F8F8;
+    padding-left: 16px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+
+}
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.loader {
+    z-index: 1;
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.loader::after {
+    content: '';
+    z-index: -1;
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 20px #EEF5FF;
+    position: absolute;
+    height: 100%;
+    left: 0%;
+    width: 20px;
+    transform: translate3d(-525%, 0, 0);
+    animation: SlightAnimatio1 2s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes SlightAnimatio1 {
+    50% {
+        left: 150%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
+
+
+
+.AllInventoryMainPage,
+.MotorCyclesMainPage,
+.OthersMainPage,
+.SedanMainPage,
+.SUVMainPage,
+.TrucksMainPage {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    left: 0px;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.AllIn {
+    animation: ShowAllInventory 0.5s linear forwards;
+}
+
+.MotorS {
+    animation: ShowMotorCycles 0.5s linear forwards;
+}
+
+.OTHERS {
+    animation: ShowOthers 0.5s linear forwards;
+}
+
+.SD {
+    animation: ShowSedan 0.5s linear forwards;
+}
+
+.SUV {
+    animation: ShowSUV 0.5s linear forwards;
+}
+
+.TRUCKS {
+    animation: ShowTRUCK 0.5s linear forwards;
+}
+
+@keyframes ShowAllInventory {
+    to {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: block;
+        z-index:10;
+        border-radius: 0%;
+    }
+}
+
+@keyframes ShowMotorCycles {
+    to {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: block;
+        z-index:10;
+        border-radius: 0%;
+    }
+}
+
+@keyframes ShowOthers {
+    to {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: block;
+        z-index:10;
+        border-radius: 0%;
+    }
+}
+
+@keyframes ShowSedan {
+    to {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: block;
+        z-index:10;
+        border-radius: 0%;
+    }
+}
+
+@keyframes ShowSUV {
+    to {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: block;
+        z-index:10;
+        border-radius: 0%;
+    }
+}
+
+@keyframes ShowTRUCK {
+    to {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: block;
+        z-index:10;
+        border-radius: 0%;
+    }
+}

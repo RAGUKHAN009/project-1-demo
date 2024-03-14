@@ -1,0 +1,693 @@
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* 
+
+    HEADER STARTS HERE
+
+*/
+
+header {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DCDFE4;
+}
+
+.headerAlign {
+    height: 28px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LogoCont h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.LogoContact {
+    width: 24px;
+    height: 24px;
+}
+
+.LogoContact a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoContact a img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* 
+    HEADER ENDS HERE
+*/
+
+
+
+/* 
+
+    HERO CONT STARTS HERE
+
+*/
+
+
+.heroCont {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* aside cont starts here */
+.HeroAside {
+    width: 449px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 1px 0px 1px #DCDFE4;
+    background-color: #FFFFFF;
+}
+
+.HeroAsideAlign {
+    width: 92%;
+    height: 92%;
+}
+
+.AsideCont1 {
+    width: 100%;
+    height: 17.5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 1px #DCDFE4;
+}
+
+.AsideCont1 label {
+    font-size: 20px;
+    font-weight: 700;
+    height: 30%;
+    display: flex;
+    width: 100%;
+}
+
+.SearchDiv {
+    height: 33%;
+    width: 99%;
+    background-color: #F8F8F8;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.SearchDiv i {
+    color: #65676B;
+    padding: 0.5% 0 0 3%;
+    font-size: 17px;
+}
+
+.SearchDiv input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #65676B;
+    width: 80%;
+    height: 100%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/*  */
+
+
+.AsideCont2 {
+    width: 100%;
+    height: 100%;
+}
+
+.AsideCont2Heading {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: 11%;
+}
+
+.CartsNavList {
+    list-style: none;
+    height: 90%;
+    width: 100%;
+}
+
+.CartsNavList li {
+    cursor: pointer;
+    color: black;
+    margin-bottom: 9px;
+    transition: 0.5s ease all;
+    height: 10%;
+    color: #535151;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 2px;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6 {
+
+    width: 94%;
+}
+
+
+
+
+
+.CartsNavList li.blue {
+    color: #1B74E4;
+    background-color: #F8F8F8;
+    padding-left: 16px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+
+}
+
+.HeroMain {
+    width: 80%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+.HeroMainAlign {
+    width: 95.5%;
+    height: 97.5%;
+    margin-top: 2.5%;
+    overflow: scroll;
+}
+
+.ContactMainCont {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    position: relative;
+}
+
+.ContactMainContDis1 {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: 597px;
+    grid-auto-rows: 597px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ContactCartDis11 {
+    margin-top: 2px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 36px rgba(183, 191, 221, 0.3);
+    border: 1px solid rgba(183, 191, 221, 1);
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactCartDis12 {
+    margin-top: 2px;
+    width: 100%;
+    height: 597px;
+    box-shadow: 0 0 36px rgba(183, 191, 221, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ContactMainContDis2 {
+    width: 99%;
+    height: 168px;
+    border-radius: 6px;
+    box-shadow: 0 0 36px rgba(183, 191, 221, 0.3);
+    border: 1px solid rgba(183, 191, 221, 1);
+
+}
+
+.ContactMainContDis2Align {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.ContactMainContDis2Align img {
+    width: 33px;
+    height: 33px;
+}
+
+.ContactMainContDis2Align h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    width: 160px;
+    color: rgba(34, 34, 34, 1);
+}
+
+.ContactMainContDis2Align P {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    width: 280PX;
+    color: rgba(144, 147, 162, 0.8);
+}
+
+.ContactCartDis12Align {
+    height: 84%;
+    width: 90%;
+    gap: 17px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.ContactDis12cart1 {
+    width: 100%;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.ContactDis12cart1 h1 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    line-height: 30px;
+}
+
+.clockClass {
+    width: 118px;
+    height: 34px;
+    background-color: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.ClockClassAlign {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ClockClassAlign img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ClockClassAlign h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(146, 152, 175, 1);
+}
+
+
+.ContactDis12cart1 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*  */
+/*  */
+/*  */
+
+
+.ContactDis12cart2 {
+    width: 100%;
+    height: 213px;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ContactDis12cart2 h1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.CD12C2Contend {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.CD12C2Contend img {
+    width: 24px;
+    height: 156px;
+    border-radius: 13px;
+
+}
+
+.CD12C2ContendList {
+    width: 410px;
+    height: 176px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.CD12C2ContendList li {
+    color: rgba(114, 114, 114, 1);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    height: 44px;
+
+}
+
+.ContactDis12cart3 {
+    width: 100%;
+    background-color: yellow;
+    height: 35px;
+}
+
+.appointmentButton {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(8, 102, 255, 1);
+}
+
+.appointmentButton a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contentAllInventory,
+.contentSUV,
+.contentMotorcycles,
+.contentTrucks,
+.contentSedan,
+.contentOther {
+    width: 100%;
+    height: max-content;
+}
+
+.ContentInventoryHeading,
+.contentSUVHeading,
+.contentMotorcyclesHeading,
+.contentTrucksHeading,
+.contentSedanHeading,
+.contentOtherHeading {
+    font-size: 22px;
+    font-weight: 700;
+    height: 8%;
+    margin-top: 24px;
+}
+
+.ContentInventoryCarts,
+.contentSUVCarts,
+.contentMotorcyclesCarts,
+.contentTrucksCarts,
+.contentSedanCarts,
+.contentOtherCarts {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(4, 390px);
+    grid-auto-rows: 390px;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.HeroMainAlign::-webkit-scrollbar {
+    height: 0vh;
+    width: 0vw;
+}
+
+.HeroMainAlign::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+
+.InventoryGridItems,
+.SUVGridItems,
+.MotorcyclesGridItems,
+.TrucksGridItems,
+.SedanGridItems,
+.OtherGridItems {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.cartsImg {
+    width: 291.5px;
+    height: 296px;
+    border-radius: 6px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.cartsImg img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 2%;
+}
+
+.cartsText {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cartsText h1 {
+    font-size: 19px;
+    color: #050505;
+    font-weight: 700;
+    height: 30%;
+    margin-top: 3%;
+}
+
+.cartsText h2 {
+    font-size: 16px;
+    color: #050505;
+    font-weight: 500;
+    height: 30%;
+}
+
+.cartsText p {
+    font-size: 15.5px;
+    color: #65676B;
+    font-weight: 400;
+    height: 30%;
+}
+
+.activ {
+    background-color: #EEF5FF;
+}
+
+
+.HeroAside {
+    overflow: scroll;
+}
+
+
+.HeroAside::-webkit-scrollbar {
+    height: 0vh;
+    width: 0vw;
+}
+
+.HeroAside::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.ContactCartDis11Align {
+    width: 90%;
+    height: 90%;
+}
+
+.calendar {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calender h1 {
+    margin-top: 24px;
+}
+
+.headerCalender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.calenderHead {
+    font-weight: bold;
+    width: 160px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.prev-Button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(26, 26, 26, 0.61);
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.next-Butt {
+    background-color: rgba(235, 244, 255, 1);
+    color: rgba(27, 116, 228, 1);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(26, 26, 26, 0.61);
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+
+table {
+    width: 100%;
+    height: 294px;
+}
+
+th{
+    
+    padding: 10px 0px;
+    font-size: 16px;
+}
+td {
+    padding: 10px 28px;
+    font-size: 16px;
+    text-align: end;
+}
+
+.timezone-select {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 20px;
+    width: 353px;
+}
+
+.timeZone {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+
+}
+
+select {
+    width: 316px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+}
